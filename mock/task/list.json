@@ -1,0 +1,45 @@
+{
+    "resultCode": 0,
+    "resultContent": [{
+        "description": "每日登录知否APP",
+        "id": 1,
+        "money": 5,
+        "status": 1,
+        "title": "登录知否",
+        "type": 1
+    }, {
+        "description": "参与1局挑战赛",
+        "forward": 7,
+        "id": 2,
+        "money": 5,
+        "status": 0,
+        "title": "重在参与",
+        "type": 3
+    }, {
+        "description": "通关至少1场挑战赛",
+        "forward": 7,
+        "id": 3,
+        "money": 10,
+        "status": 0,
+        "title": "旗开得胜",
+        "type": 3
+    }, {
+        "description": "得到至少1场首杀",
+        "forward": 7,
+        "id": 4,
+        "money": 50,
+        "status": 0,
+        "title": "王者归来",
+        "type": 3
+    }, {
+        "description": "完成任意金额充值",
+        "forward": 2,
+        "id": 5,
+        "money": 100,
+        "status": 0,
+        "title": "挥金如土",
+        "type": 2
+    }],
+    "resultMsg": "成功",
+    "statusCode": 0
+}

@@ -1,0 +1,12 @@
+{
+    "resultCode": 0,
+    "resultMsg": "操作成功",
+    "resultContent": {
+        "id": 1,
+        "uid": 1,
+        "amount": 2200,
+        "createTime": "2019-05-27 01:20:04",
+        "isFrozen": 0
+    },
+    "statusCode": 0
+}

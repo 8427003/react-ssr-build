@@ -1,0 +1,108 @@
+{
+    "resultCode": 0,
+    "resultMsg": "操作成功！",
+    "statusCode": 0,
+    "resultContent": {
+          "current": 1,
+          "pageSize": 10,
+          "total": 180,
+          "records": [
+              {
+                  "testScheduleTitle": "挑战塞标题1",
+                  "createTime": "2019-03-01 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题2",
+                  "createTime": "2019-03-02 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题3",
+                  "createTime": "2019-03-02 14:06",
+                  "isMvp": 1,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题3",
+                  "createTime": "2019-03-03 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+              {
+                  "testScheduleTitle": "挑战塞标题1",
+                  "createTime": "2019-03-01 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题2",
+                  "createTime": "2019-03-02 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题3",
+                  "createTime": "2019-03-02 14:06",
+                  "isMvp": 1,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题3",
+                  "createTime": "2019-03-03 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+              {
+                  "testScheduleTitle": "挑战塞标题1",
+                  "createTime": "2019-03-01 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题2",
+                  "createTime": "2019-03-02 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题3",
+                  "createTime": "2019-03-02 14:06",
+                  "isMvp": 1,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题3",
+                  "createTime": "2019-03-03 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+              {
+                  "testScheduleTitle": "挑战塞标题1",
+                  "createTime": "2019-03-01 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题2",
+                  "createTime": "2019-03-02 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题3",
+                  "createTime": "2019-03-02 14:06",
+                  "isMvp": 1,
+                  "isWin": 1
+               },
+               {
+                  "testScheduleTitle": "挑战塞标题3",
+                  "createTime": "2019-03-03 14:06",
+                  "isMvp": 0,
+                  "isWin": 1
+               }
+          ]
+    }
+  }

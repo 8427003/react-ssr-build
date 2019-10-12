@@ -1,0 +1,2 @@
+require('./test/aaa');
+import('./test/bbb');

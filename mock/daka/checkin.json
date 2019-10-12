@@ -1,0 +1,57 @@
+{
+  "resultMsg": "打卡成功",
+  "resultContent": {
+    "clockinUserNum": 0,
+    "isNewUser": false,
+    "totalClockinTimes": 12,
+    "weekClockinTimes": 3,
+    "hasClockinToday": true,
+    "hasRead": false,
+    "totalBonus": 10000000,
+    "weekClockinStatus": [
+      {
+        "clockinTime": 1561993942000,
+        "creditBonus": 30,
+        "dayStatus": -1,
+        "hasClockin": true
+      },
+      {
+        "clockinTime": 1561998082000,
+        "creditBonus": 30,
+        "dayStatus": 0,
+        "hasClockin": true
+      },
+      {
+        "clockinTime": 1562084482000,
+        "creditBonus": 30,
+        "dayStatus": 1,
+        "hasClockin": true
+      },
+      {
+        "clockinTime": 1562170882000,
+        "creditBonus": 30,
+        "dayStatus": 1,
+        "hasClockin": true
+      },
+      {
+        "clockinTime": 1562257282000,
+        "creditBonus": 30,
+        "dayStatus": 1,
+        "hasClockin": true
+      },
+      {
+        "clockinTime": 1562343682000,
+        "creditBonus": 30,
+        "dayStatus": 1,
+        "hasClockin": true
+      },
+      {
+        "clockinTime": 1562430082000,
+        "creditBonus": 30,
+        "dayStatus": 1,
+        "hasClockin": true
+      }
+    ]
+  },
+  "statusCode": 0
+}

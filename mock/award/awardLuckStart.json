@@ -1,0 +1,30 @@
+{
+    "resultCode": 0,
+    "resultContent": [
+        {
+            "code": "AWARD_3",
+            "coin": 100,
+            "cover": "https://img2.tystatic.cn/common-upload/LyKKz1UcQ.png",
+            "desc": "金币100",
+            "icon": "https://img2.tystatic.cn/common-upload/C2flHR6AQ.png",
+            "id": 1,
+            "luckDraw": {
+                "createTime": 1555913522000,
+                "gameSeason": 1,
+                "goodsCode": "COIN_1",
+                "id": 3,
+                "isDelete": 0,
+                "isExchange": 0,
+                "isExchangeCode": 0,
+                "isReal": 1,
+                "isShow": 1,
+                "level": 1,
+                "number": 2,
+                "tag": 1,
+            },
+            "name": "优惠券"
+        },
+    ],
+    "resultMsg": "操作成功",
+    "statusCode": 0
+}

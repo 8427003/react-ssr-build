@@ -1,0 +1,33 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+        "gameCount": {
+            "gameCount4": 0,
+            "gameCount5": 0
+        },
+        "propsCount": {
+            "keepStarCard": 0,
+            "addScoreCard": 0
+        },
+        "rank": {
+            "rankName": "略知一二",
+            "rankScore": 3,
+            "rank": 267,
+            "rankIcon": "https://qj100.tystatic.cn/app-material/rank-icon/略知一二.png"
+        },
+        "user": {
+            "creditScore": 0,
+            "headImgUrl": "https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI6mOcCbxqtd2JygDPuk8PATC83cLdAibHWPddwaTDanrmsMlwcwa9v08XmJUj4eGBibfEfzRS4Yy0A/132",
+            "balance": 0,
+            "userName": "YouLink"
+        },
+        "gameStats": {
+            "loseMvpCount": 1,
+            "playGameCount": 8,
+            "winMvpCount": 5,
+            "winRatio": 0.88
+        }
+    },
+    "resultMsg": "成功",
+    "statusCode": 0
+}

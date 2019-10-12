@@ -1,0 +1,25 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+        "code": "ADD_SCORE_CARD",
+        "cover": "https://img2.tystatic.cn/common-upload/wCUMffSDn.png",
+        "desc": "<span class=\"grey\">使用后，下局游戏你每道题可额外获得1分（可受到倍数加成）。</span><span class=\"yellow\">仅限S0赛季比赛中使用，不能延用至下一赛季。</span>",
+        "icon": "https://img2.tystatic.cn/common-upload/llOQwxMVQ.png",
+        "id": 6,
+        "luckDraw": {
+            "createTime": 1555583497000,
+            "gameSeason": 1,
+            "goodsCode": "ADD_SCORE_CARD",
+            "id": 2,
+            "isDelete": 0,
+            "isReal": 0,
+            "level": 1,
+            "number": 1,
+            "stock": 99,
+            "tag": 0
+        },
+        "name": "S0加分卡"
+    },
+    "resultMsg": "操作成功",
+    "statusCode": 0
+}

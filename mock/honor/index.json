@@ -1,0 +1,13 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+        "level": {
+            "honorLevel": 2,
+            "maxHonor": 60,
+            "minHonor": 1
+        },
+        "honor": 10
+    },
+    "resultMsg": "获取成功",
+    "statusCode": 0
+}

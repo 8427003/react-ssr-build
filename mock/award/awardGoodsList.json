@@ -1,0 +1,130 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+        "goodsExtraVOList": [
+            {
+                "code": "AWARD_1",
+                "cover": "",
+                "desc": "增加88颗钻石",
+                "icon": "https://img2.tystatic.cn/common-upload/ldObdUi55.png",
+                "luckDraw": {
+                    "gameSeason": 1,
+                    "goodsCode": "AWARD_1",
+                    "isReal": 0,
+                    "number": 88,
+                    "tag": 0
+                },
+                "name": "钻石x88"
+            },
+            {
+                "code": "AWARD_2",
+                "cover": "https://img2.tystatic.cn/common-upload/uo3v78FJX.png",
+                "desc": "原装进口，顶级橄榄油品质",
+                "icon": "https://img2.tystatic.cn/common-upload/JulXKI3Fk.png",
+                "luckDraw": {
+                    "gameSeason": 1,
+                    "goodsCode": "AWARD_2",
+                    "isReal": 0,
+                    "number": 1,
+                    "tag": 0,
+                    "url": "https://detail.youzan.com/show/goods?alias=2x6px3u6rahjo&banner_id=f.77587927~goods.6~1~lOloPIzj&components_style_size=1&reft=1556078897316&spm=f.77587927&sf=wx_sm&sl=2J8SUR&is_share=1&from_uuid=951f344e-7822-6c89-a957-0b8d60a31d8e&redirect_count=1"
+                },
+                "name": "欧丽薇兰橄榄油"
+            },
+            {
+                "code": "AWARD_3",
+                "cover": "https://img2.tystatic.cn/common-upload/st25BvJUP.jpg",
+                "desc": "水蜜桃樱桃柠檬花香，各80克，4罐装",
+                "icon": "https://img2.tystatic.cn/common-upload/v--rtp_Bs.png",
+                "luckDraw": {
+                    "gameSeason": 1,
+                    "goodsCode": "AWARD_3",
+                    "isReal": 0,
+                    "number": 1,
+                    "tag": 0,
+                    "url": "https://www.baidu.com"
+                },
+                "name": "花果茶手信礼盒"
+            },
+            {
+                "code": "AWARD_4",
+                "cover": "https://img2.tystatic.cn/common-upload/WQItuSJAhG.jpg",
+                "desc": "全场满56元减10元",
+                "icon": "https://img2.tystatic.cn/common-upload/NxW13TrLA.png",
+                "luckDraw": {
+                    "gameSeason": 1,
+                    "goodsCode": "AWARD_4",
+                    "isReal": 0,
+                    "number": 1,
+                    "tag": 0,
+                    "url": "https://www.baidu.com"
+                },
+                "name": "故宫食品"
+            },
+            {
+                "code": "AWARD_5",
+                "cover": "https://img2.tystatic.cn/common-upload/IUTvzcxMj.jpg|https://img2.tystatic.cn/common-upload/3HpDsJ8FJh.jpg",
+                "desc": "健康低脂，健身减脂必备",
+                "icon": "https://img2.tystatic.cn/common-upload/Fka7VZowN.png",
+                "luckDraw": {
+                    "gameSeason": 1,
+                    "goodsCode": "AWARD_5",
+                    "isReal": 0,
+                    "number": 1,
+                    "tag": 0,
+                    "url": "https://www.baidu.com"
+                },
+                "name": "三色藜麦"
+            },
+            {
+                "code": "AWARD_6",
+                "cover": "https://img2.tystatic.cn/common-upload/sGke1En4Y.jpg|https://img2.tystatic.cn/common-upload/JcE_wLd_Ua.jpg",
+                "desc": "源自地道烘焙工艺，体会五种纯粹坚果味道",
+                "icon": "https://img2.tystatic.cn/common-upload/kjL5b6zvt.png",
+                "luckDraw": {
+                    "gameSeason": 1,
+                    "goodsCode": "AWARD_6",
+                    "isReal": 1,
+                    "number": 1,
+                    "stock": 100,
+                    "tag": 0
+                },
+                "name": "什锦坚果果仁"
+            },
+            {
+                "code": "AWARD_7",
+                "cover": "https://img2.tystatic.cn/common-upload/tVRw5kAYP.png|https://img2.tystatic.cn/common-upload/D2Y-jANjob.png",
+                "desc": "专效抑制菌斑牙垢（(薄荷莲花香型)）",
+                "icon": "https://img2.tystatic.cn/common-upload/3G98OOp7x.png",
+                "luckDraw": {
+                    "gameSeason": 1,
+                    "goodsCode": "AWARD_7",
+                    "isReal": 1,
+                    "number": 1,
+                    "stock": 100,
+                    "tag": 0
+                },
+                "name": "华素愈创牙膏"
+            },
+            {
+                "code": "AWARD_8",
+                "desc": "兑换其它高级礼物",
+                "icon": "https://img2.tystatic.cn/common-upload/FUNkmk7MJ.png",
+                "luckDraw": {
+                    "gameSeason": 1,
+                    "goodsCode": "AWARD_8",
+                    "isReal": 0,
+                    "number": 1,
+                    "tag": 1
+                },
+                "name": "水晶"
+            }
+        ],
+        "user": {
+            "luckyValue": 80,
+            "uid": 9910015692
+        }
+    },
+    "resultMsg": "操作成功",
+    "statusCode": 0
+}

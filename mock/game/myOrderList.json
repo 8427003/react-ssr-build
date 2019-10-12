@@ -1,0 +1,91 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+        "current": 1,
+        "pages": 1,
+        "records": [
+            {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              },
+              {
+                "amount": 100,
+                "createTime": 1555485249000,
+                "introduce": "提现失败原因",
+                "status": 1
+              }
+        ],
+        "size": 10,
+        "total": 1
+    },
+    "resultMsg": "操作成功",
+    "statusCode": 0
+}

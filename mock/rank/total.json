@@ -1,0 +1,53 @@
+{
+    "resultMsg": "获取打卡排行榜信息成功",
+    "resultContent": {
+        "records": [
+            {
+                "uid": 1068847678,
+                "userName": "糖衣小助手",
+                "headImgUrl": "http://qj100.tystatic.cn/web-headImg/a23ab5a9430c5be29a00fccfd9d4a9a0.jpg",
+                "totalClockInTimes": 9,
+                "rank": 1
+            },
+            {
+                "uid": 1068847678,
+                "userName": "糖衣小助手",
+                "headImgUrl": "http://qj100.tystatic.cn/web-headImg/a23ab5a9430c5be29a00fccfd9d4a9a0.jpg",
+                "totalClockInTimes": 9,
+                "rank": 2
+            },
+            {
+                "uid": 1068847678,
+                "userName": "糖衣小助手",
+                "headImgUrl": "http://qj100.tystatic.cn/web-headImg/a23ab5a9430c5be29a00fccfd9d4a9a0.jpg",
+                "totalClockInTimes": 9,
+                "rank": 3
+            },
+            {
+                "uid": 1068847678,
+                "userName": "糖衣小助手",
+                "headImgUrl": "http://qj100.tystatic.cn/web-headImg/a23ab5a9430c5be29a00fccfd9d4a9a0.jpg",
+                "totalClockInTimes": 9,
+                "rank": 4
+            },
+            {
+                "uid": 1068847678,
+                "userName": "糖衣小助手",
+                "headImgUrl": "http://qj100.tystatic.cn/web-headImg/a23ab5a9430c5be29a00fccfd9d4a9a0.jpg",
+                "totalClockInTimes": 9,
+                "rank": 5
+            }
+        ],
+        "total": 10,
+        "size": 5,
+        "current": 1,
+        "pages": 1,
+        "user" : {
+            "uid": 1068847678,
+            "userName": "糖衣小助手",
+            "headImgUrl": "http://qj100.tystatic.cn/web-headImg/a23ab5a9430c5be29a00fccfd9d4a9a0.jpg",
+            "rank" : 10
+        }
+    },
+    "statusCode": 0
+}

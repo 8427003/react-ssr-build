@@ -1,0 +1,48 @@
+{
+  "resultCode": 0,
+  "resultContent": [
+    {
+      "code": "KEEP_STAR_LEVEL_CARD",
+      "cover": "https://img2.tystatic.cn/common-upload/LyKKz1UcQ.png",
+      "desc": "<span class=\"grey\">被动使用，输掉比赛不扣星，使用时机：在游戏结束时自动判断用户是否有保星卡，有则直接消耗并抵扣本次游戏的扣星被动使用，输掉比赛不扣星。</span><span class=\"yellow\">仅限S0赛季比赛中使用，不能延用至下一赛季。</span>",
+      "icon": "https://img2.tystatic.cn/common-upload/C2flHR6AQ.png",
+      "name": "S0保星卡",
+            "luckDraw": {
+                "createTime": 1555913522000,
+                "gameSeason": 1,
+                "goodsCode": "COIN_1",
+                "id": 3,
+                "isDelete": 0,
+                "isExchange": 0,
+                "isExchangeCode": 0,
+                "isReal": 1,
+                "isShow": 1,
+                "level": 1,
+                "number": 2,
+                "tag": 1,
+            },
+      "userPrize": {
+        "exchange": 0,
+        "goodsCode": "KEEP_STAR_LEVEL_CARD",
+        "number": 12,
+        "url": "www.baidu.com"
+      }
+    },
+    {
+      "code": "KEEP_STAR_LEVEL_CARD",
+      "cover": "https://img2.tystatic.cn/common-upload/LyKKz1UcQ.png",
+      "desc": "<span class=\"grey\">被动使用，输掉比赛不扣星，使用时机：在游戏结束时自动判断用户是否有保星卡，有则直接消耗并抵扣本次游戏的扣星被动使用，输掉比赛不扣星。</span><span class=\"yellow\">仅限S0赛季比赛中使用，不能延用至下一赛季。</span>",
+      "icon": "https://img2.tystatic.cn/common-upload/C2flHR6AQ.png",
+      "name": "S0保星卡",
+      "userPrize": {
+        "exchange": 0,
+        "exchangeCode": "兑换码",
+        "goodsCode": "KEEP_STAR_LEVEL_CARD",
+        "number": 12,
+        "url": "www.baidu.com"
+      }
+    }
+  ],
+  "resultMsg": "操作成功",
+  "statusCode": 0
+}

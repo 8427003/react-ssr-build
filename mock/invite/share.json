@@ -1,0 +1,34 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+        "myInfo": {
+            "uid": 168749895282688,
+            "headImgUrl": "https://testxvideo.oss-cn-beijing.aliyuncs.com/web-headImg/api_a0d909b6c39a490bad1bc94312fadbf5_1560939482721",
+            "userName": "王腾讯"
+        },
+        "testGroupSchedule": {
+            "latestTestScheduleId": 0,
+            "startTestScheduleId": 0,
+            "author": {
+                "uid": 172586043482112,
+                "headImgUrl": "https://img1.tystatic.cn/zhifou-image/week3/3.4.png",
+                "certifyTitle": "《一站到底》冠军",
+                "certifyIntro": "同济大学2014级直博生，获得12项国家专利，《一站到底》、《最强大脑》选手",
+                "userName": "段超"
+            },
+            "isFinish": 0,
+            "homeCover": "https://img1.tystatic.cn/zhifou-image/cover/7.4-cover.jpg?v=20190704-1",
+            "title": "地产风云",
+            "type": 1,
+            "testScheduleCount": 3,
+            "testScheduleFinishCount": 0,
+            "groupDate": 20190704,
+            "id": 18,
+            "scheduleId": 11,
+            "difficultLevel": 1
+        },
+        "sign": "ea38dc1ec8dc86f38cc4fa51a9a1ebfc"
+    },
+    "resultMsg": "",
+    "statusCode": 0
+}

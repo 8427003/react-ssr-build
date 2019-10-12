@@ -1,0 +1,8 @@
+{
+    "resultCode": 0,
+    "resultMsg": "操作成功",
+    "resultContent": {
+        "inviteCode": "ABCD"
+    },
+    "statusCode": 0
+}

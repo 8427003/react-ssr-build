@@ -1,0 +1,25 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+        "propsList": [
+            {
+                "code": "ADD_SCORE_CARD",
+                "count": 1,
+                "cover": "https://img2.tystatic.cn/common-upload/LyKKz1UcQ.png",
+                "desc": "<span class=\"grey\">被动使用，输掉比赛不扣星，使用时机：在游戏结束时自动判断用户是否有保星卡，有则直接消耗并抵扣本次游戏的扣星被动使用，输掉比赛不扣星，使用时机：在游戏结束时自动判断用户是否有保星卡，有则直接消耗并抵扣本次游戏的扣星。</span><span class=\"yellow\">仅限S0赛季比赛中使用，不能延用至下一赛季。</span>",
+                "icon": "https://img2.tystatic.cn/common-upload/1gRlo2ixR.png",
+                "name": "加分卡"
+            },
+            {
+                "code": "KEEP_STAR_LEVEL_CARD",
+                "count": 1,
+                "cover": "https://img2.tystatic.cn/common-upload/iJeFZVveD.png",
+                "desc": "<span class=\"grey\">被动使用，输掉比赛不扣星，使用时机：在游戏结束时自动判断用户是否有保星卡，有则直接消耗并抵扣本次游戏的扣星被动使用，输掉比赛不扣星，使用时机：在游戏结束时自动判断用户是否有保星卡，有则直接消耗并抵扣本次游戏的扣星。</span><span class=\"yellow\">仅限S0赛季比赛中使用，不能延用至下一赛季。</span>",
+                "icon": "https://img2.tystatic.cn/common-upload/C2flHR6AQ.png",
+                "name": "保星卡"
+            }
+        ]
+    },
+    "resultMsg": "获取成功",
+    "statusCode": 0
+}

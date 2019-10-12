@@ -1,0 +1,23 @@
+const express = require('express');
+const React = require('react');
+const ReactDOMServer = require('react-dom/server');
+const App = require('./components/App');
+
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send(`
+    <!doctype html>
+    <html lang="en">
+      <head>...</head>
+      <body>
+        <div id="app">${ReactDOMServer.renderToString(<App/>)}</div>
+        <script src="/dist/main.js"></script>
+      </body>
+    </html>
+  `);
+});
+
+app.listen(3000, () => {
+    console.log('Running on http://localhost:3000/');
+});

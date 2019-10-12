@@ -1,0 +1,48 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+        "goodsExtraVOList": [
+            {
+                "code": "ADD_SCORE_CARD",
+                "cover": "https://img2.tystatic.cn/common-upload/wCUMffSDn.png",
+                "desc": "<span class=\"grey\">使用后，下局游戏你每道题可额外获得1分（可受到倍数加成）。</span><span class=\"yellow\">仅限S0赛季比赛中使用，不能延用至下一赛季。</span>",
+                "icon": "https://img2.tystatic.cn/common-upload/llOQwxMVQ.png",
+                "luckDraw": {
+                    "exchangeNumber": 1,//多少水晶可兑换
+                    "goodsCode": "ADD_SCORE_CARD",
+                    "stock": 99//库存
+                },
+                "name": "S0加分卡"
+            },
+            {
+                "code": "ADD_SCORE_CARD_2",
+                "cover": "https://img2.tystatic.cn/common-upload/wCUMffSDn.png",
+                "desc": "<span class=\"grey\">使用后，下局游戏你每道题可额外获得1分（可受到倍数加成）。</span><span class=\"yellow\">仅限S0赛季比赛中使用，不能延用至下一赛季。</span>",
+                "icon": "https://img2.tystatic.cn/common-upload/llOQwxMVQ.png",
+                "luckDraw": {
+                    "exchangeNumber": 1,//多少水晶可兑换
+                    "goodsCode": "ADD_SCORE_CARD",
+                    "stock": 99//库存
+                },
+                "name": "S0加分卡"
+            },
+            {
+                "code": "ADD_SCORE_CARD_3",
+                "cover": "https://img.alicdn.com/imgextra/i4/413996455/O1CN011xYR3lPHFzvytRB_!!413996455.jpg|https://img2.tystatic.cn/common-upload/LyKKz1UcQ.png",
+                "desc": "游戏机就是好玩",
+                "icon": "https://img2.tystatic.cn/common-upload/llOQwxMVQ.png",
+                "luckDraw": {
+                    "exchangeNumber": 1,//多少水晶可兑换
+                    "goodsCode": "ADD_SCORE_CARD",
+                    "stock": 99//库存
+                },
+                "name": "小霸王游戏机"
+            }
+        ],
+        "userPrize": {
+            "number": 100//水晶数
+        }
+    },
+    "resultMsg": "操作成功",
+    "statusCode": 0
+}

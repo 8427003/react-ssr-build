@@ -1,0 +1,20 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+      "token": {
+        "expiresIn": 72000,
+        "refreshToken": "9a8161e30b9453549d8e76d73609bb06",
+        "token": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJkZXZpY2VUeXBlIjoyLCJ1aWQiOjEwNDY1NDU4NDcwMTUxNzgyNCwiZGV2aWNlVXVpZCI6IjVDRDMzQTRDLTA5OUYtNDVBQS1CNEMzLThBRkIyOTk1ODJEQSIsImV4cCI6MTU0NDc2NDQyMiwidmVyc2lvbiI6IjEuMCIsImlhdCI6MTU0NDY5MjQyMn0.aWrSLJUr9F700sbE6l-0sE-t0617X7qZThFXrj3uGqc"
+      },
+      "user": {
+        "birthday": "1990-12-16",
+        "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png",
+        "sex": 0,
+        "uid": 104654584701517820,
+        "userName": "手机用户7317",
+        "imNickname": "浮生未歇"
+      }
+    },
+    "resultMsg": "操作成功！",
+    "statusCode": 0
+  }

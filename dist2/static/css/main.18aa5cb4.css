@@ -1,0 +1,154 @@
+.rules-wrap {
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #ffa102, #ff773d);
+}
+.rules-wrap .content {
+  padding: 0 12px;
+  padding-top: 18px;
+  box-sizing: border-box;
+}
+.rules-wrap .rule-list {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 0;
+  padding-left: 12px;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+.rules-wrap .rule-list p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding-left: 16px;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #000000;
+}
+.rules-wrap .rule-list p:before {
+  display: block;
+  margin-right: 4px;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAQRJREFUeAHt2NEKwyAMheHSp97brxMUhnTDtiZykj8QxKvoZ7zQbSMQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEggq8PvsqSZwIFJh3TZA6oG8ckAZwQKpIZ53TcNqY9rqN4KRFuoKTDukOThqkJzjhkWbghEWaiRMOyQInDJIljjySB44skieOHNIKHBmklTgmSHv3smbqILCyi0ptiViBJIPTTtATSQ7HE0kWxwNJHscSKQyOBVI4nJlIYXFmIIXHeYKUBucOUjqcK0hpcUaQ0uP8QwKn6dSxgJj86XR1pKcFic6RPkIWjwACCCCAAAIIIIAAAggggAACCCCAAAII/BQ4AA+rHRHr7q0OAAAAAElFTkSuQmCC) center center no-repeat;
+  background-size: cover !important;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+}
+
+.notive-wrap {
+  z-index: 11000;
+}
+* {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  /*系统默认菜单被禁用*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  -moz-user-select: none;
+  /*火狐*/
+  -ms-user-select: none;
+  /*IE10*/
+  user-select: none;
+}
+input,
+textarea {
+  -webkit-user-select: auto;
+  /*webkit浏览器*/
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Helvetica!important;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: none;
+}
+:focus {
+  outline: none;
+}
+body.ReactModal__Body--open {
+  /*overflow: hidden;*/
+  /*position:fixed;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+.square {
+  position: relative;
+}
+.square .square-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.square:after {
+  display: block;
+  padding-bottom: 100%;
+  content: '';
+  height: 0;
+}
+.p-loading {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  text-align: center;
+}
+.lds-dual-ring {
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 26px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 3px solid #90909087;
+  border-color: #90909087 transparent #90909087 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  transform-origin: 50% 50%;
+  animation: rotate 6s linear infinite;
+  /*开始动画后无限循环，用来控制rotate*/
+}
+

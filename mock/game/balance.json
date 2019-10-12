@@ -1,0 +1,16 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+          "balance": 1000,
+          "isBindPhone": 1,
+          "isBindWechat": 1,
+          "state": 0,
+          "user" : {
+            "uid": 1068847678,
+            "userName": "糖衣小助手",
+            "headImgUrl": "https://qj100.tystatic.cn/web-image/test_iOS_A64ACB39-6202-42C2-938B-12315ED5F44915623137922193.png"
+        }
+      },
+    "resultMsg": "操作成功！",
+    "statusCode": 0
+  }

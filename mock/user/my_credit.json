@@ -1,0 +1,11 @@
+{
+    "resultCode": 0,
+    "resultMsg": "操作成功",
+    "resultContent": {
+        "id": 2,
+        "uid": 1,
+        "score": 0,//钻石数量
+        "isFrozen": false
+    },
+    "statusCode": 0
+}

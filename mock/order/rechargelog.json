@@ -1,0 +1,43 @@
+{
+    "errorCode": 0,
+    "errorMsg": "success",
+    "data": {
+        "total": 2,
+        "list": [
+            {
+                "id": 384,
+                "user": "106707665104896",
+                "goods": 35,
+                "status": 0,
+                "type": 1,
+                "transactionId": null,
+                "tradeNo": "9m893_nlazjpuF3qS3xpP",
+                "orderAmount": 100,
+                "createTime": 1553000173345,
+                "updateTime": 1553000173345,
+                "goodsSnapshot": "{\"id\":35,\"code\":\"MjNhZjZlNzAtMjQzZi0xMWU5LThkMmEtOWRmMDNhOThjN2Zl0\",\"sort\":1,\"title\":\"100金币\",\"originalPrice\":100,\"discountPrice\":0,\"intro\":\"123123\",\"cover\":\"https://img2.tystatic.cn/shop-order-fe/static/imgs/50.65f976bd.png\",\"isReal\":0,\"createTime\":1547628598140,\"updateTime\":1547628598140,\"status\":2,\"count\":-1,\"store\":\"1\",\"user\":\"cV8UABRlnh2yPDeoiSsjYhwiEiE\",\"extraID\":\"COIN_1\",\"tag\":\"recharge\",\"extra\":{\"id\":1,\"code\":\"COIN_1\",\"name\":\"金币100\",\"desc\":\"金币100\",\"cover\":\"https://img2.tystatic.cn/shop-order-fe/static/imgs/50.65f976bd.png\",\"coin\":100,\"icon\":null}}",
+                "payInfo": null,
+                "store": "1",
+                "count": 1,
+                "goodsTag": "recharge"
+            },
+            {
+                "id": 385,
+                "user": "106707665104896",
+                "goods": 35,
+                "status": 0,
+                "type": 1,
+                "transactionId": null,
+                "tradeNo": "9m893_nlazjpuF3qS3xpP",
+                "orderAmount": 200,
+                "createTime": 1553000173345,
+                "updateTime": 1553000173345,
+                "goodsSnapshot": null,
+                "payInfo": null,
+                "store": "1",
+                "count": 1,
+                "goodsTag": "walletRecharge"
+            }
+        ]
+    }
+}

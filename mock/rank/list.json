@@ -1,0 +1,440 @@
+{
+    "resultCode": 0,
+    "resultContent": {
+      "currentId": 3,
+      "totle": 3,
+      "testList": [
+        {
+          "id": "3",
+          "title": "纪连海做客知否"
+        },
+        {
+          "id": "5",
+          "title": "你真的会拍照吗？"
+        },
+        {
+          "id": "6",
+          "title": "生活常识"
+        }
+      ],
+      "myInfo": {
+        "honorRank": 2,
+        "honorLevel": 9,
+        "uid": 153460872716288,
+        "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png",
+        "userName": "王腾讯"
+      },
+      "teamList": [
+        {
+          "rank": 1,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 11,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 12,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 13,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 14,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 15,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 16,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 17,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 18,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 19,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 20,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 21,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 22,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 23,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        },
+        {
+          "rank": 24,
+          "memberList": [
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            },
+            {
+              "userName": "王腾讯",
+              "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png"
+            }
+          ]
+        }
+      ]
+    },
+    "resultMsg": "操作成功！",
+    "statusCode": 0
+  }

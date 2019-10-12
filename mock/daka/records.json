@@ -1,0 +1,58 @@
+{
+  "resultMsg": "打卡信息获取成功",
+  "resultContent": {
+    "clockinUserNum": 2222,
+    "isNewUser": false,
+    "totalClockinTimes": 10,
+    "weekClockinTimes": 6,
+    "hasClockinToday": false,
+    "hasRead": false,
+    "totalBonus": 10000000,
+    "weekClockinStatus": [
+      {
+        "clockinTime": 1561993942000,
+        "creditBonus": 30,
+        "dayStatus": -1,
+        "hasClockin": false
+      },
+      {
+        "clockinTime": 1561998082000,
+        "creditBonus": 30,
+        "dayStatus": -1,
+        "hasClockin": false
+      },
+      {
+        "clockinTime": 1562084482000,
+        "creditBonus": 30,
+        "dayStatus": -1,
+        "hasClockin": false
+      },
+      {
+        "clockinTime": 1562170882000,
+        "creditBonus": 30,
+        "dayStatus": -1,
+        "hasClockin": false
+      },
+      {
+        "clockinTime": 1562257282000,
+        "creditBonus": 30,
+        "dayStatus": -1,
+        "hasClockin": false
+      },
+      {
+        "clockinTime": 1562343682000,
+        "creditBonus": 30,
+        "dayStatus": 0,
+        "hasClockin": false
+      },
+      {
+        "clockinTime": 1562430082000,
+        "creditBonus": 30,
+        "dayStatus": 1,
+        "hasClockin": false
+          
+      }
+    ]
+  },
+  "statusCode": 0
+}

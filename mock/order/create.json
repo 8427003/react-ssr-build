@@ -1,0 +1,8 @@
+{
+    "errorCode": 0,
+    "errorMsg": "success",
+    "data": {
+        "payUrl": "weixin://wxpay/s/An4baqw",
+        "tradeNo": "YmU4OGVmZTAtMjQ1Yi0xMWU5LWJlMDYtYTlhMjY3YjRjMTVh"
+    }
+}

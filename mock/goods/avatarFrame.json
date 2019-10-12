@@ -1,0 +1,24 @@
+{
+  "resultCode": 0,
+  "resultMsg": "操作成功",
+  "resultContent": [
+      {
+          "id": 120,
+          "code": "EGSKW6KL",
+          "name": "头像框",
+          "desc": "荣耀头像框",
+          "cover": "www.img.png",
+          "icon": "https://img2.tystatic.cn/common-upload/PDVm4RNer.png"
+      },
+      {
+          "id": 121,
+          "code": "EGSKW6KL2",
+          "name": "复活卡",
+          "desc": "复活卡",
+          "cover": "https://img2.tystatic.cn/common-upload/kPfFiaFZB.png",
+          "icon": "https://img2.tystatic.cn/common-upload/kPfFiaFZB.png"
+      }
+  ]
+  ,
+  "statusCode": 0
+}

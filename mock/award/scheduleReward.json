@@ -1,0 +1,238 @@
+{
+  "resultCode": 0,
+  "resultContent": {
+    "bonusImg": "http://bmob-cdn-24619.b0.upaiyun.com/2019/05/13/400c736c401490fe80210d3a4021df5b.png",
+    "bonusIntro": "一周完美首通，平分10万奖金",
+    "testCount": 19,
+    "firstFinishCount": 3,
+    "finishCount": 11,
+    "currentId": "5",
+    "totle": 20,
+    "currentSchedule": {
+        "finishCount": 0,
+        "scheduleOrder": "第2周",
+        "id": "5",
+        "title": "人文中国守望者",
+        "remind": 0
+    },
+    "scheduleList": [
+      {
+        "id": "3",
+        "title": "纪连海做客知否",
+        "scheduleOrder": "第三周",
+        "finishCount": 11,
+        "remind": 0
+      },
+      {
+        "id": "5",
+        "title": "你真的会拍照吗？",
+        "scheduleOrder": "第二周",
+        "finishCount": 11,
+        "remind": 1
+      },
+      {
+        "id": "6",
+        "title": "生活常识",
+        "scheduleOrder": "第一周",
+        "finishCount": 11,
+        "remind": 0
+      },
+      {
+        "id": "7",
+        "title": "纪连海做客知否",
+        "scheduleOrder": "第三周",
+        "finishCount": 11,
+        "remind": 0
+      },
+      {
+        "id": "8",
+        "title": "你真的会拍照吗？",
+        "scheduleOrder": "第二周",
+        "finishCount": 11,
+        "remind": 1
+      },
+      {
+        "id": "9",
+        "title": "生活常识",
+        "scheduleOrder": "第一周",
+        "finishCount": 11,
+        "remind": 0
+      }
+    ],
+    "boxList": [
+      {
+        "id": 1,
+        "level": 6,
+        "type": 1,
+        "name": "一号宝箱",
+        "img": "www.img.img",
+        "state": -1,
+        "luckDrawBOList": [
+          {
+            "number": 88,
+            "goodsExtra": {
+              "id": 7,
+              "code": "AWARD_1",
+              "name": "钻石x88",
+              "desc": "增加88颗钻石",
+              "cover": "",
+              "icon": "https://img2.tystatic.cn/common-upload/ldObdUi55.png"
+            }
+          },
+          {
+            "number": 1,
+            "goodsExtra": {
+              "id": 8,
+              "code": "AWARD_2",
+              "name": "特级橄",
+              "desc": "原装进口，顶级橄榄油品质。优惠券使用规则：抽中该券到背包后，点击购买跳转至商城，购买时输入优惠券码即可",
+              "cover": "https://img2.tystatic.cn/common-upload/uo3v78FJX.png|https://img2.tystatic.cn/common-upload/JiJ2qpqeWH.png|https://img2.tystatic.cn/common-upload/roh3BWAq7n.png|https://img2.tystatic.cn/common-upload/9IOveutiHI.png",
+              "icon": "https://img2.tystatic.cn/common-upload/2b2Vw7tVd.png"
+            }
+          },
+          {
+            "number": 1,
+            "goodsExtra": {
+              "id": 10,
+              "code": "AWARD_3",
+              "name": "花果茶",
+              "desc": "小罐装花果茶，8种口味任你享。优惠券使用规则：抽中该券到背包后，点击购买跳转至商城，购买时输入优惠券码即可",
+              "cover": "https://img2.tystatic.cn/common-upload/st25BvJUP.jpg|https://img2.tystatic.cn/common-upload/WQItuSJAhG.jpg|https://img2.tystatic.cn/common-upload/bGKb7j4nA4.jpg|https://img2.tystatic.cn/common-upload/Tty00HSr-k.jpg|https://img2.tystatic.cn/common-upload/p_3ZyR3Z8Z.jpg",
+              "icon": "https://img2.tystatic.cn/common-upload/hKfAsjHsw.png"
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "level": 12,
+        "type": 2,
+        "name": "二号宝箱",
+        "img": "www.img.img",
+        "state": 0,
+        "luckDrawBOList": [
+          {
+            "number": 1,
+            "goodsExtra": {
+              "id": 11,
+              "code": "AWARD_4",
+              "name": "全场通",
+              "desc": "全场99元减10元（4.25-5.31），优惠券使用规则：抽中该券点击去购买即可领取",
+              "cover": "https://img2.tystatic.cn/common-upload/09w8EF5kn.png|https://img2.tystatic.cn/common-upload/rdwNXU8-N.png|https://img2.tystatic.cn/common-upload/oBF97bY4W9.jpg",
+              "icon": "https://img2.tystatic.cn/common-upload/uy9BLxnx1.png"
+            }
+          },
+          {
+            "number": 1,
+            "goodsExtra": {
+              "id": 14,
+              "code": "AWARD_7",
+              "name": "抑菌牙",
+              "desc": "专效抑制菌斑牙垢(薄荷莲花香型)。兑奖规则：成功领取后请微信联系“知否说”公众号进行兑换",
+              "cover": "https://img2.tystatic.cn/common-upload/tVRw5kAYP.png|https://img2.tystatic.cn/common-upload/D2Y-jANjob.png|https://img2.tystatic.cn/common-upload/qxyH6AXuuz.png|https://img2.tystatic.cn/common-upload/UqoX6tCavq.jpg",
+              "icon": "https://img2.tystatic.cn/common-upload/Jt5t75iic.png"
+            }
+          },
+          {
+            "number": 1,
+            "goodsExtra": {
+              "id": 13,
+              "code": "AWARD_6",
+              "name": "什锦",
+              "desc": "源自地道烘焙工艺，体会五种纯粹坚果味道。兑奖规则：成功领取后请微信联系“知否说”公众号进行兑换",
+              "cover": "https://img2.tystatic.cn/common-upload/sGke1En4Y.jpg|https://img2.tystatic.cn/common-upload/JcE_wLd_Ua.jpg|https://img2.tystatic.cn/common-upload/sgn4BiJGp8.jpg",
+              "icon": "https://img2.tystatic.cn/common-upload/3o1SpdbWX.png"
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "level": 19,
+        "type": -1,
+        "name": "兑换宝箱",
+        "img": "www.duihuan.com",
+        "state": 1,
+        "luckDrawBOList": [
+          {
+            "number": 1,
+            "goodsExtra": {
+              "id": 12,
+              "code": "AWARD_5",
+              "name": "白/三色",
+              "desc": "健康低脂，健身减脂必备。优惠券使用规则：抽中该券到背包后，点击购买跳转至商城，购买时输入优惠券码即可",
+              "cover": "https://img2.tystatic.cn/common-upload/IUTvzcxMj.jpg|https://img2.tystatic.cn/common-upload/3HpDsJ8FJh.jpg|https://img2.tystatic.cn/common-upload/TmSou4LdQf.jpg",
+              "icon": "https://img2.tystatic.cn/common-upload/6_F1ZJgeu.png"
+            }
+          },
+          {
+            "number": 1,
+            "goodsExtra": {
+              "id": 15,
+              "code": "AWARD_8",
+              "name": "幸运水",
+              "desc": "兑换其它高级礼物",
+              "icon": "https://img2.tystatic.cn/common-upload/FUNkmk7MJ.png"
+            }
+          }
+        ]
+      }
+    ],
+    "historyList": [
+      {
+        "testList": [
+          {
+            "id": 4,
+            "isComplete": 1,
+            "isUnlock":1
+          },
+          {
+            "id": 5,
+            "isComplete": 1,
+            "isUnlock": 1
+          },
+          {
+            "id": 6,
+            "isComplete": 2,
+            "isUnlock": 1
+          }
+        ],
+        "author": {
+          "uid": 153460872716288,
+          "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png",
+          "certifyTitle": "首席出题官",
+          "certifyIntro": "",
+          "userName": "王腾讯"
+        }
+      },
+      {
+        "testList": [
+          {
+            "id": 4,
+            "isComplete": 2,
+            "isUnlock": 0
+          },
+          {
+            "id": 5,
+            "isComplete": 1,
+            "isUnlock": 1
+          },
+          {
+            "id": 6,
+            "isComplete": 2,
+            "isUnlock": 1
+          }
+        ],
+        "author": {
+          "uid": 153460872716288,
+          "headImgUrl": "https://xvideo100.tangyishipin.com/app-material/headerImg.png",
+          "certifyTitle": "首席出题官",
+          "certifyIntro": "",
+          "userName": "王腾讯"
+        }
+      }
+    ]
+  },
+  "resultMsg": "操作成功！",
+  "statusCode": 0
+}
