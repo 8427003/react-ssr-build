@@ -1,7 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { useEffect } from 'react';
 
-export default function () {
+export default function (props) {
+    console.log('entry page /xxxx ========================= start');
+    console.log('page rules props: ', props);
+
+    useEffect(() => {
+        console.log('useEffect==================in /xxx')
+        console.log('entry page /xxx ========================= end ');
+    })
     return (
         <div>
             xxxxxxxxxxxxxxxx

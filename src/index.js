@@ -14,13 +14,22 @@ if(config[NODE_PROFILE] && config[NODE_PROFILE].baseURL) {
     axios.defaults.withCredentials = true;
 }
 
-window.main = function () {
-    Loadable.loadReady().then(() => {
-        console.log('====================loadReady done====================');
+if(window.isSSR) {
+    window.main = function () {
+        Loadable.loadReady('/rules').then(() => {
+            console.log('====================loadReady done====================');
 
-        ReactDOM.hydrate(
-            <App />,
-            document.getElementById('root')
-        );
-    })
+            ReactDOM.hydrate(
+                <App />,
+                document.getElementById('root')
+            );
+        })
+    }
 }
+else {
+    ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+    );
+}
+
