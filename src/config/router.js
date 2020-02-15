@@ -2,7 +2,7 @@ export default [
     {
         path: '/rules',
         name: 'rules',
-        component: () => import('views/rules')
+        component: () => import('views/rules'/**1231231**/)
     },
     {
         path: '/xxx',

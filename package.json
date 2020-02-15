@@ -14,6 +14,7 @@
     "devDependencies": {
         "moment": "^2.24.0",
         "rid-webpack-build": "https://github.com/8427003/rid-webpack-build.git#master",
+        "stats-webpack-plugin": "^0.7.0",
         "upload-cdn": "https://github.com/8427003/upload-cdn.git",
         "webpack-merge": "^4.2.1"
     },

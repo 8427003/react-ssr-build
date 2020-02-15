@@ -27,7 +27,7 @@ function Loadable(loaderConfig) {
         return new Promise((resolve, reject) => {
             if(!res) {
                 res = {
-                    loaderRes: loaderConfig.loader._mm(),
+                    loaderRes: loaderConfig.loader._importModule(),
                 }
             }
             if(!(res.loaderRes instanceof Promise)) {
@@ -46,6 +46,8 @@ function Loadable(loaderConfig) {
             })
             .then(initProps => {
                 res.initProps = initProps;
+                res.requestModuleId = loaderConfig.loader._requestModuleId();
+                res.requestText = loaderConfig.loader._requestText;
                 resolve(res);
             })
             .catch(error => {
@@ -54,7 +56,6 @@ function Loadable(loaderConfig) {
             })
         })
     }
-    console.log('add page loader................')
     PAGE_LOADERS.push({
         loaderConfig,
         init,
@@ -68,13 +69,13 @@ function Loadable(loaderConfig) {
         componentDidMount() {
             if(!res.component && this.initRes) {
                 this.initRes.then(() => {
-                    console.log('Loadable update....')
+                    console.log('....async LoadableComponent update....')
                     this.forceUpdate();
                 })
             }
         }
         render() {
-            console.log('second..............................')
+            console.log('.................render LoadableComponent...............')
             if(res.component) {
                 const { component: Component, initProps } = res;
 
@@ -90,12 +91,13 @@ function Loadable(loaderConfig) {
 }
 
 Loadable.loadReady = function (url) {
+    console.log('=================loadReady entry=============');
     let plSize = PAGE_LOADERS.length;
     let loaderConfig = null;
     let init = null;
     let match = null;
 
-    console.log('page loaders total: ', plSize);
+    console.log('loadReady: page total: ', plSize);
 
     while(plSize--) {
         const pageLoader = PAGE_LOADERS.pop();
@@ -107,12 +109,16 @@ Loadable.loadReady = function (url) {
         })
 
         if(match) {
+            console.log('loadReady: match success!');
             break;
         }
     }
 
     if(typeof init === 'function') {
-        return init(match)
+        return init(match).then(res => {
+            console.log('loadReady: match result: \n path:', url, ', router:', res);
+            return res;
+        })
     }
 
     return Promise.reject('no macth');
