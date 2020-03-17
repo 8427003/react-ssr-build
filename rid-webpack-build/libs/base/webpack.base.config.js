@@ -1,8 +1,12 @@
 const webpack = require('webpack');
 const CONFIG = require('../config.js');
+const path = require('path');
 
 module.exports = {
-
+    //entry: {
+        //main: './src/index.js',
+        //ssr: './src/app/index.js',
+    //},
     // entry relative to the context, default cwd, it's useful when need independent from CWD
     context: CONFIG.PROJECT_ROOT,
 
@@ -33,6 +37,10 @@ module.exports = {
                     loader: 'html-loader',
                 }
             },
+            //{
+                //test: /\.js$/,
+                //loader: path.resolve('./loader.js'),
+            //},
             {
                 test: /\.js$/,
                 exclude: /bower_components|node_modules\/(?!(swiper)\/).*/,
@@ -66,7 +74,7 @@ module.exports = {
 
                         //swiper
                         "@babel/plugin-transform-exponentiation-operator",
-                        ['/Users/lijun/git/ssr-test/src/app/babelPlug.js', { "isServer": false }],
+                        ['/Users/lijun/git/ssr-test/src/app/babelPlug.js', { "isServer": false}],
                     ]
                 }
             }

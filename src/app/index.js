@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
-//import { Switch, Route, HashRouter as Router } from 'react-router';
-import { Switch, Route, StaticRouter as Router } from 'react-router-dom';
+import { Switch, Route, StaticRouter, BrowserRouter } from 'react-router-dom';
 import Loadable from './loadable.js';
 import routerList from '../config/router';
 import './index.less';
 
 const { loadReady } = Loadable;
+
+// 重要1，在服务端渲染下，用staticRouter，location 传path 进去。
+// 在浏览器里，用browserRouter，不传location。
+const Router = (typeof window !== 'undefined') ? BrowserRouter : StaticRouter;
 
 let routeList = routerList.filter(item => item.type !== 'Redirect').map(item => {
     let props = {
@@ -24,18 +27,11 @@ let routeList = routerList.filter(item => item.type !== 'Redirect').map(item => 
 
 export default function (props) {
     console.log('================app Router entry=================')
-
     return (
-        <Router location='/rules?xxx=1'>
+        <Router {...(props.routerProps || {})}>
             <Switch>
                 {routeList}
             </Switch>
         </Router>
     )
-}
-export {
-    loadReady,
-    React,
-    ReactDOM,
-    ReactDOMServer
 }

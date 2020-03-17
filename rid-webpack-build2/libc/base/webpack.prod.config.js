@@ -20,20 +20,11 @@ const MiniCssExtractPluginLoader = CONFIG.EXTRACT_RESOURCE_IN_CSS_PUBLIC_PATH ? 
 module.exports = {
     //target: 'node',
     output: {
-        path: CONFIG.DIST_DIR,
-
-        // 如果 publicPath 没有设置，那么index.html 中的js，css等资源路径是一个相对路径,
-        // 且相默认对于inde.html(A relative URL is resolved relative to the HTML page)
-        // 如果设置，则相当于给了static/xxx.js 一个前缀，对资源生成后的存放路径没影响
-        // 默认值区别于devServer的publicPath，devServer不设置，则默认值为‘/’， 这里不设置，相当于
-        /// 一个空字符串, 走相对路径
-        //
-        // 通常如果静态资源（非html 文件）由独立的静态资源服务器提供务，
-        // 或者是分配了单独的静态资源访问路径时需要设置此前缀。
-        // 通常如果静态资源与html文件保持构建时的目录结构时，走相对路径，无需设置。
-        //
-        // 由config.js 覆盖
-        publicPath: '/', //无其它前缀时，必须为‘/’,否则资源路径错误，出现undefied，待解决
+        //filename: `${CONFIG.JS_DIR}/[name].[chunkhash:8].js`,
+         filename: 'ssr-app.js',
+        publicPath: CONFIG.OUTPUT_PUBLIC_PATH,
+        //library: 'ssrApp',
+        //libraryTarget: 'commonjs2'
     },
     mode: 'development',
 
@@ -54,18 +45,6 @@ module.exports = {
         //],
     //},
     //
-    //
-    optimization: {
-        splitChunks: {
-            chunks: 'all',
-            cacheGroups: {
-                vendors: {
-                    // Note the usage of `[\\/]` as a path separator for cross-platform compatibility.
-                    test: /[\\/]node_modules[\\/]/
-                }
-            }
-        }
-    },
 
     // source map must be need, because we uglify js, min css etc
     //devtool: 'source-map',

@@ -23,8 +23,11 @@ function Loadable(loaderConfig) {
 
     let res = null;
 
-    const init = (match) => {
+    const init = (match, initProps) => {
         return new Promise((resolve, reject) => {
+            if(res) {
+                return resolve(res);
+            }
             if(!res) {
                 res = {
                     loaderRes: loaderConfig.loader._importModule(),
@@ -36,18 +39,17 @@ function Loadable(loaderConfig) {
             }
             res.loaderRes.then(m => {
                 res.component = resolveModule(m);
-                if(typeof res.component.getInitialProps === 'function') {
-                    let initProps = res.component.getInitialProps({ match });
-                    if(!(initProps instanceof Promise)) {
-                        initProps = Promise.resolve(initProps)
-                    }
-                    return initProps;
+                if(typeof res.component.getInitialProps === 'function' && typeof initProps === 'undefined') {
+                    console.log("invok initProps ajax....")
+                    return res.component.getInitialProps({ match });
                 }
+                return initProps;
             })
             .then(initProps => {
                 res.initProps = initProps;
                 res.requestModuleId = loaderConfig.loader._requestModuleId();
                 res.requestText = loaderConfig.loader._requestText;
+                res.ready = true;
                 resolve(res);
             })
             .catch(error => {
@@ -67,7 +69,10 @@ function Loadable(loaderConfig) {
             this.initRes = init();
         }
         componentDidMount() {
-            if(!res.component && this.initRes) {
+            if(!res) {
+                throw Error('no init Loadable!');
+            }
+            if(!res.ready && this.initRes) {
                 this.initRes.then(() => {
                     console.log('....async LoadableComponent update....')
                     this.forceUpdate();
@@ -76,7 +81,7 @@ function Loadable(loaderConfig) {
         }
         render() {
             console.log('.................render LoadableComponent...............')
-            if(res.component) {
+            if(res && res.ready && res.component) {
                 const { component: Component, initProps } = res;
 
                 return loaderConfig.render ? loaderConfig.render({
@@ -90,7 +95,7 @@ function Loadable(loaderConfig) {
     }
 }
 
-Loadable.loadReady = function (url) {
+Loadable.loadReady = function (url, initProps) {
     console.log('=================loadReady entry=============');
     let plSize = PAGE_LOADERS.length;
     let loaderConfig = null;
@@ -99,8 +104,22 @@ Loadable.loadReady = function (url) {
 
     console.log('loadReady: page total: ', plSize);
 
-    while(plSize--) {
-        const pageLoader = PAGE_LOADERS.pop();
+    //while(plSize--) {
+        //const pageLoader = PAGE_LOADERS.pop();
+        //loaderConfig = pageLoader.loaderConfig;
+        //init = pageLoader.init;
+
+        //const match = matchPath(url, {
+            //path: loaderConfig.path
+        //})
+
+        //if(match) {
+            //console.log('loadReady: match success!');
+            //break;
+        //}
+    //}
+    for(let i = 0; i < plSize; i++) {
+        const pageLoader = PAGE_LOADERS[i];
         loaderConfig = pageLoader.loaderConfig;
         init = pageLoader.init;
 
@@ -115,8 +134,9 @@ Loadable.loadReady = function (url) {
     }
 
     if(typeof init === 'function') {
-        return init(match).then(res => {
+        return init(match, initProps).then(res => {
             console.log('loadReady: match result: \n path:', url, ', router:', res);
+            res.path = url;
             return res;
         })
     }

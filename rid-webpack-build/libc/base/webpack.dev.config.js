@@ -72,26 +72,26 @@ module.exports = {
         host: '0.0.0.0',
 
         // PUBLIC_DIR
-        before: function (app){
-            app.use(
-                `${this.publicPath}${CONFIG.PUBLIC_FILE_NAME}`,
+        //before: function (app){
+            //app.use(
+                //`${this.publicPath}${CONFIG.PUBLIC_FILE_NAME}`,
 
-                // 不用管理express依赖，DevServer已经依赖
-                require('express').static(CONFIG.PUBLIC_DIR)
-            )
-        },
-        proxy: [
-            {
-                context: ['/**'],
-                onError: () => {},
-                bypass: Mock(CONFIG.MOCK_API_JSON_FILE)
-            }
-        ],
-        after: function (app){
-            app.get('/xxxa', () => {
-                console.log(12312);
-            })
-        },
+                //// 不用管理express依赖，DevServer已经依赖
+                //require('express').static(CONFIG.PUBLIC_DIR)
+            //)
+        //},
+        //proxy: [
+            //{
+                //context: ['/**'],
+                //onError: () => {},
+                //bypass: Mock(CONFIG.MOCK_API_JSON_FILE)
+            //}
+        //],
+        //after: function (app){
+            //app.get('/xxxa', () => {
+                //console.log(12312);
+            //})
+        //},
 
         historyApiFallback: {verbose: true},
     },

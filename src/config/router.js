@@ -1,18 +1,18 @@
 export default [
     {
-        path: '/rules',
+        path: '/p/rules',
         name: 'rules',
         component: () => import('views/rules'/**1231231**/)
     },
     {
-        path: '/xxx',
+        path: '/p/xxx',
         name: 'xxx',
         component: () => import('views/xxx')
     },
     {
         type: 'Redirect',
         from: '/',
-        to: '/xxx'
+        to: '/p/rules'
     }
 ]
 

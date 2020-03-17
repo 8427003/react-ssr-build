@@ -42,8 +42,9 @@ class MyApp extends React.Component {
         return (
             <div className="container rules-wrap">
                 <div className="content">
+                    <Link to="/p/xxx">点我去xxx</Link>
                     <div className="rule-list">
-                        <p>用户首次通关任意关卡，即可参与当天的打卡。重复挑战已通关关卡不能参与打卡{Math.random()}</p>
+                        <p>用户首次通关任意关卡，即可参与当天的打卡。重复挑战已通关关卡不能参与打卡</p>
                         <p>每周一到周日，每天均完成打卡，即可参与平分当周奖金；</p>
                         <p>每周日晚上12点截止当周的打卡，系统会自动计算本周符合奖金平分资格的用户，并自动将奖金发放至用户帐户；</p>
                         <p>每周一重新开启打卡活动，用户需从周一重新开始打卡；</p>
@@ -59,6 +60,7 @@ class MyApp extends React.Component {
 }
 
 MyApp.getInitialProps = function () {
+    console.log('rules ...........ajax initProps..........');
     return Promise.resolve("1111");
 }
 

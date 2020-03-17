@@ -1,3 +1,6 @@
+const fs = require('fs-extra');
+const path = require('path');
+
 function isCssFile(asset) {
     if(!asset) return;
     return (asset.length - '.css'.length) === asset.lastIndexOf('.css');
@@ -18,8 +21,30 @@ function initStats(stats) {
 
     // init request assets
     const assetsByRequest = {};
+    const chunksJsExcludeEntry = [];
+    const chunksJsEntry = [];
     chunks.forEach(item => {
+        if(item.initial && !item.entry) {
+            item.files.forEach(file => {
+                if(isJsFile(file)) {
+                    chunksJsExcludeEntry.push(file);
+                }
+            })
+        }
+        if(item.initial && item.entry) {
+            item.files.forEach(file => {
+                if(isJsFile(file)) {
+                    chunksJsEntry.push(file);
+                }
+            })
+        }
         if(!item.initial && !item.entry) {
+            item.files.forEach(file => {
+                if(isJsFile(file)) {
+                    chunksJsExcludeEntry.push(file);
+                }
+            })
+
             const cssFiles = [];
             const jsFiles = [];
 
@@ -69,14 +94,16 @@ function initStats(stats) {
             }
         })
     })
-
     return {
         assetsByEntry,
-        assetsByRequest
+        assetsByRequest,
+        chunksJsExcludeEntry,
+        chunksJsEntry,
+        publicPath: stats.publicPath,
     }
 }
 
-function getAssets(initedStats, requestText, entryPoint = 'main') {
+function getAssets({ initedStats, requestText, entryPoint = 'main' } = {}) {
     if(!initedStats || (initedStats && (!initedStats.assetsByEntry || !initedStats.assetsByRequest))) {
         console.error('initedStats has some exception!:', initedStats);
         return;
@@ -101,22 +128,135 @@ function getAssets(initedStats, requestText, entryPoint = 'main') {
     }
 
     return {
-        cssFiles: [].concat(entryAssets ? entryAssets.css : [], requestAssets ? requestAssets.css : []),
-        jsFiles: [].concat(entryAssets ? entryAssets.js: [], requestAssets ? requestAssets.js: []),
+        // css entry 的放前面
+        cssFiles: [].concat(entryAssets ? entryAssets.css : [],  requestAssets ? requestAssets.css : []),
+        // js entry 放后面，避免entry 去拉request的js
+        jsFiles: [].concat(requestAssets ? requestAssets.js: [], entryAssets ? entryAssets.js: []),
     }
 }
 
-function getAssetsXMLString(initedStats, requestText, entryPoint='main') {
-    const assets = getAssets(initedStats, requestText, entryPoint);
+function getAssetsXMLString({initedStats, requestText, entryPoint='main', isPublicPrefix = true} = {}) {
+    const assets = getAssets({ initedStats, requestText, entryPoint });
+    let publicPath = '';
+    if(isPublicPrefix) {
+        publicPath = initedStats.publicPath;
+    }
 
     return {
-        js: assets.jsFiles.map(item => '<script src="'+item+'"></script>').join(''),
-        css: assets.cssFiles.map(item => '<link href="'+item+'" rel="stylesheet" />').join('')
+        js: assets.jsFiles.map(item => '<script src="'+ publicPath + item +'"></script>').join(''),
+        css: assets.cssFiles.map(item => '<link href="'+ publicPath + item +'" rel="stylesheet" />').join('')
     }
+}
+
+function requireExcludeEntry(initedStats, root) {
+    const chunksJs = initedStats.chunksJsExcludeEntry;
+    console.log('requireExcludeEntry: ', chunksJs);
+
+    if(chunksJs) {
+        chunksJs.forEach(file => {
+            if(root) {
+                file = path.resolve(root, file);
+            }
+            if(fs.pathExistsSync(file)){
+                require(file);
+                console.log('success require chunk file:', file);
+            }
+            else {
+                console.error('Not fount chunk file:', file);
+            }
+        })
+    }
+}
+
+function requireEntry(initedStats, root) {
+    const chunksJs = initedStats.chunksJsEntry;
+    console.log('requireEntry: ', chunksJs);
+
+    if(chunksJs.length > 1) {
+        throw Error('no support mutil entry!');
+    }
+    if(chunksJs.length === 1) {
+        let file = chunksJs[0]
+        if(root) {
+            file = path.resolve(root, file);
+        }
+        if(fs.pathExistsSync(file)){
+            console.log('success require entry chunk file:', file);
+            return require(file);
+        }
+        else {
+            console.error('Not fount entry chunk file:', file);
+        }
+    }
+    else {
+        throw Error('entry chunk lose!');
+    }
+}
+
+function requireAll(initedStats, root) {
+    requireExcludeEntry(initedStats, root);
+    return requireEntry(initedStats, root);
+}
+
+// require data {
+//      matchResult,
+//      jsTpl,
+//      cssTpl,
+//      pageContent
+// }
+function makeHtmlTpl(htmlPath) {
+    if(typeof htmlPath !== 'string') {
+        throw Error('htmlPath required!');
+    }
+    const preJs = `<script>window.isSSR=true;</script>`;
+    const postJs = '<script>window.main(${this.matchResultStr});</script>';
+
+    return fs.readFileSync(htmlPath, 'utf8')
+        .replace(/(<script.*?>([\s\S]*?)<\/script>)|(<link.*?rel="stylesheet".*?\/?>)/img, '')
+        .replace(/<div.*?id="root".*?>/img, '<div id="root">${this.pageContent}')
+        .replace(/<\/body>/img, preJs + "${this.js}" + postJs + "</body>")
+        .replace(/<\/head>/img, "${this.css}</head>")
+}
+
+function _fillTemplate(templateString, templateVars){
+    return new Function("return `"+templateString +"`;").call(templateVars);
+}
+
+function getIndexHtmlByTpl({ htmlTpl, data = {} }) {
+    return _fillTemplate(htmlTpl, data);
+}
+
+function getIndexHtml({ htmlTpl, matchResult, pageContent, initedStats } = {}) {
+    const assets = getAssetsXMLString({ initedStats, requestText: matchResult.requestText });
+
+    if(!htmlTpl) {
+        return `
+            <!doctype html>
+            <html lang="en">
+                <head>
+                    ${assets.css}
+                </head>
+                <body>
+                    <div id="root">${pageContent}</div>
+                    <script>window.isSSR=true;</script>
+                    ${assets.js}
+                    <script>window.main(${JSON.stringify(matchResult)});</script>
+                </body>
+            </html>
+        `;
+    }
+
+    return getIndexHtmlByTpl({ htmlTpl, data: {
+        js: assets.js,
+        css: assets.css,
+        matchResultStr: JSON.stringify(matchResult),
+        pageContent,
+    }});
 }
 
 module.exports = {
     initStats,
-    getAssets,
-    getAssetsXMLString,
+    makeHtmlTpl,
+    getIndexHtml,
+    requireAll,
 }

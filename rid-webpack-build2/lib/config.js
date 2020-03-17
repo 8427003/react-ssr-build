@@ -14,7 +14,7 @@ const PROJECT_ROOT = path.resolve(__dirname, '../../../');
 const SRC_DIR = path.resolve(PROJECT_ROOT, "./src");
 
 // project dist path, relative to PROJECT_ROOT, default PROJECT_ROOT/dist
-const DIST_DIR = path.resolve(PROJECT_ROOT, "./dist");
+const DIST_DIR = path.resolve(PROJECT_ROOT, "./dist2");
 
 
 // the public filename relative to PROJECT_ROOT
@@ -60,9 +60,6 @@ const CSS_DIR = 'static/css';
 const EXTRACT_RESOURCE_IN_CSS_PUBLIC_PATH = '';
 
 
-// stats json
-const STATS_JSON_PATH  =  path.resolve(DIST_DIR, './stats-json');
-
 module.exports = {
     PROJECT_ROOT,
     SRC_DIR,
@@ -79,5 +76,4 @@ module.exports = {
     JS_DIR,
     CSS_DIR,
     EXTRACT_RESOURCE_IN_CSS_PUBLIC_PATH,
-    STATS_JSON_PATH
 }

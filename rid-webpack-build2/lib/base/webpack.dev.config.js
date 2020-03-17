@@ -79,22 +79,13 @@ module.exports = {
                 // 不用管理express依赖，DevServer已经依赖
                 require('express').static(CONFIG.PUBLIC_DIR)
             )
-            app.use(Mock(CONFIG.MOCK_API_JSON_FILE))
         },
-        //proxy: [
-            //{
-                //context: ['/**'],
-                //onError: () => {},
-                //bypass: Mock(CONFIG.MOCK_API_JSON_FILE)
-            //}
-        //],
-        //after: function (app){
-            //app.get('/xxxa', () => {
-                //console.log(12312);
-            //})
-        //},
-
-        historyApiFallback: {verbose: true},
+        proxy: [
+            {
+                context: ['/zfapi/**'],
+                bypass: Mock(CONFIG.MOCK_API_JSON_FILE)
+            }
+        ]
     },
     plugins:[
         new webpack.HotModuleReplacementPlugin(),
