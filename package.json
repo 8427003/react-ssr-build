@@ -12,8 +12,7 @@
         "debug": "webpack --config ./build/webpack.config.js --env.prod --display-modules --sort-modules-by size --json > compilation-stats.json"
     },
     "devDependencies": {
-        "@loadable/babel-plugin": "^5.12.0",
-        "@sukbta/webpack-builder": "0.0.3",
+        "@sukbta/webpack-builder": "^0.0.3",
         "moment": "^2.24.0",
         "upload-cdn": "https://github.com/8427003/upload-cdn.git",
         "webpack-merge": "^4.2.1"
