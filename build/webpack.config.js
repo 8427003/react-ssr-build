@@ -1,5 +1,6 @@
 const path = require('path');
 const webpackMerge = require('webpack-merge');
+const webpackBuilder = require('@sukbta/webpack-builder');
 
 var config = {
     resolve: {
@@ -9,27 +10,26 @@ var config = {
         }
     }
 }
-
 module.exports = function (env={}) {
+    let SPAConfig = null;
+    let builderConfig = {
+    };
+
+    if (env.cdn) {
+        builderConfig.OUTPUT_PUBLIC_PATH = '//s2.tystatic.cn/ssr-test/';
+    }
+
+    SPAConfig = webpackBuilder.createWebpackConfig(builderConfig);
+
     if(env.prod) {
-
-        if (env.cdn) {
-            // 静态资源路径配置
-            const publicPath = '//s2.tystatic.cn/ssr-test/'
-            const static = require('rid-webpack-build/lib/config');
-            static.OUTPUT_PUBLIC_PATH = publicPath;
-            //static.MODE = 'development';
-        }
-
-        const x = webpackMerge(require('rid-webpack-build/lib/onePageReactConfig').prodConfig, config)
-        return x;
+        SPAConfig = SPAConfig.prodConfig;
+    }
+    else if(env.dev) {
+        SPAConfig = SPAConfig.devConfig;
     }
 
-    if(env.dev) {
-        const x = webpackMerge(require('rid-webpack-build/lib/onePageReactConfig').devConfig, config)
-        console.log(JSON.stringify(x));
-        return x;
-    }
+
+    return webpackMerge(SPAConfig, config)
 }
 
 

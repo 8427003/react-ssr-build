@@ -12,6 +12,8 @@
         "debug": "webpack --config ./build/webpack.config.js --env.prod --display-modules --sort-modules-by size --json > compilation-stats.json"
     },
     "devDependencies": {
+        "@loadable/babel-plugin": "^5.12.0",
+        "@sukbta/webpack-builder": "0.0.3",
         "moment": "^2.24.0",
         "rid-webpack-build": "https://github.com/8427003/rid-webpack-build.git#newssr",
         "stats-webpack-plugin": "^0.7.0",
@@ -21,6 +23,11 @@
     "dependencies": {
         "@babel/polyfill": "^7.0.0",
         "@coco-build/webpack-dev-server-simple-mock": "git+https://github.com/8427003/webpack-mock.git",
+        "@loadable/component": "^5.12.0",
+        "@sukbta/ssr-babel-plugin-enhanced-import": "0.0.1",
+        "@sukbta/ssr-express-middleware": "0.0.1",
+        "@sukbta/ssr-react-loadable": "0.0.2",
+        "@sukbta/ssr-stats-data-helper": "0.0.1",
         "amplitude-js": "^4.7.0",
         "axios": "^0.17.1",
         "express": "^4.17.1",

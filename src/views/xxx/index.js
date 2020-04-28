@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 
 export default function (props) {
-    console.log('entry page /xxxx ========================= start');
-    console.log('page rules props: ', props);
+    console.log('================entry page xxxx =========================');
 
     useEffect(() => {
         console.log('useEffect==================in /xxx')

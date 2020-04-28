@@ -6,7 +6,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
 import config from './config/env';
 import App from './app/index';
-import Loadable from './app/loadable.js';
+import Loadable from '@sukbta/ssr-react-loadable';
 const { loadReady } = Loadable;
 
 
