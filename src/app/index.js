@@ -3,11 +3,8 @@ import ReactDOM from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
 import { Switch, Route, StaticRouter, BrowserRouter } from 'react-router-dom';
 import Loadable from '@sukbta/ssr-react-loadable';
-//import Loadablex from 'react-loadable';
 import routerList from '../config/router';
 import './index.less';
-//import Loadable from '@sukbta/ssr-react-loadable';
-//import loadable from '@loadable/component'
 
 
 // 重要1，在服务端渲染下，用staticRouter，location 传path 进去。
