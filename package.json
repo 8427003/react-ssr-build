@@ -23,7 +23,7 @@
         "@sukbta/ssr-express-middleware": "^1.0.0",
         "@sukbta/ssr-react-loadable": "^1.0.3",
         "amplitude-js": "^4.7.0",
-        "axios": "^0.17.1",
+        "axios": "^0.21.1",
         "express": "^4.17.1",
         "fastclick": "^1.0.6",
         "lodash": "^4.17.11",
